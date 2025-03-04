@@ -1,7 +1,6 @@
 import express, { Application } from 'express';
 import dotenv from 'dotenv';
 import routes from './routes/index';
-import { DataBase } from './utils/database.manager';
 import cors from 'cors'
 import * as fs from 'fs';
 import { ErrorLog } from './utils/errorlog';
