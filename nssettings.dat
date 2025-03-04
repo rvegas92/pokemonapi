@@ -1,0 +1,16 @@
+{
+  "server": {
+    "port": 3020
+  },
+  "database": {
+    "user": "sa",
+    "server": "172.16.20.25",
+    "password": "amadeus2010",
+    "database": "BDERP_Agro_Hass",
+    "port":1433,
+    "options": {
+      "encrypt": false,
+      "trustServerCertificate": true
+    }
+  }
+}

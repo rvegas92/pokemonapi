@@ -1,0 +1,49 @@
+{
+  "name": "api_servicios_logisticos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/server.ts",
+    "dev": "nodemon --exec ts-node src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/identity": "^4.6.0",
+    "@azure/msal-node": "^3.1.0",
+    "@microsoft/microsoft-graph-client": "^3.0.7",
+    "@types/imap-simple": "^4.2.9",
+    "@types/lodash": "^4.17.14",
+    "@types/nodemailer": "^6.4.17",
+    "axios": "^1.8.1",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "imap-simple": "^5.1.0",
+    "isomorphic-fetch": "^3.0.0",
+    "lodash": "^4.17.21",
+    "mailparser": "^3.7.2",
+    "mssql": "^11.0.1",
+    "node-cache": "^5.1.2",
+    "node-imap": "^0.9.6",
+    "nodemailer": "^6.10.0",
+    "simple-oauth2": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/mailparser": "^3.4.5",
+    "@types/mssql": "^9.1.6",
+    "@types/node": "^22.10.10",
+    "@types/node-imap": "^0.9.3",
+    "@types/simple-oauth2": "^5.0.7",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
