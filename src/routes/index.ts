@@ -24,7 +24,7 @@ router.get("/listar", async (req: Request, res: Response) => {
     res.status(200).json({ message: "Pokémon listados", result: paginatedPokemon });
   } catch (error: any) {
     ErrorLog.save('index.ts', '/listar', error);
-    res.status(500).json({ message: "Ocurrió un error", error: error.message });
+    res.status(500).json({ message: error.message, result: [] });
   }
 });
 
@@ -38,7 +38,7 @@ router.get("/busqueda/:codigo", async (req: Request, res: Response) => {
     res.status(200).json({ message: "Búsqueda de Pokémon", result: filteredResults });
   } catch (error: any) {
     ErrorLog.save('index.ts', '/busqueda/:codigo', error);
-    res.status(500).json({ message: "Ocurrió un error", error: error.message });
+    res.status(500).json({ message: error.message, result: [] });
   }
 });
 
